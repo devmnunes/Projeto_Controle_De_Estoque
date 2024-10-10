@@ -75,7 +75,10 @@ print(f"Quantidade de Espetos em estoque: {estoque_espetos}")
 estoque_refrigerante = sistema.consutar_estoque("Refrigerante")
 print(f"Quantidade de Refrigerante em estoque: {estoque_refrigerante}")
 
-sistema.remover_produto("Camisa", 15)
+sistema.remover_produto("Chopp", [0])
+sistema.remover_produto("Cerveja", [0])
+sistema.remover_produto("Espeto", [0])
+sistema.remover_produto("Refrigerante", [0])
 
 produtos_em_estoque = sistema.listar_produtos()
 print(f"Produtos em estoque: {produtos_em_estoque}")
